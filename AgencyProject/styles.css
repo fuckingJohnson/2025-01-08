@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}
+
+.parallax {
+  /* 滾動視差的基礎設置 */
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.parallax.banner {
+  background-image: url('image/1.png');
+}
+
+.parallax.about {
+  background-image: url('image/2.png');
+}
+
+.parallax.shop {
+  background-image: url('image/3.png');
+}
+
+.content-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.gallery img {
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
