@@ -9,9 +9,7 @@
   <link rel="stylesheet" href="styles.css"> <!-- 連結外部樣式表 -->
 
   <!-- 引入 Vue -->
-  <script src="https://cdn.jsdelivr.net/npm/vue@3.2.47"></script>
-
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.5.13/vue.global.js"></script>
   <!-- 引入 jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
@@ -20,7 +18,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-      <a class="navbar-brand" href="#">SPRING Style</a>
+      <a class="navbar-brand" href="">SPRING Style</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -29,7 +27,7 @@
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
           <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="update">Update</a></li>
         </ul>
       </div>
     </div>
@@ -98,40 +96,12 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <p>© 2024 Fran Style | Follow us on <a href="#" class="text-light">Instagram</a></p>
+    <p>© 2024 Fran Style | Follow us on <a href="https://www.instagram.com/0523_samli/" class="text-light">Instagram</a></p>
   </footer>
 
-  <script src="https://www.instagram.com/0523_samli/"></script>
   <script src="js/bs5vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
 
-  <script src="js/vue.min.js"></script>
-  <script>
-    new Vue({
-      el: "#gallerysc", // 指定 Vue 實例作用的元素
-      data: {
-        galleryData: [], // 存放作品資料的陣列
-      },
-      mounted() {
-        // 在實例被創建之後執行，通常用來發送獲取資料的請求
-        this.fetchgalleryData();
-
-      },
-      methods: {
-        fetchgalleryData() {
-          // 使用 Ajax 或其他方法向後端發送請求，並將資料設置到 works 中
-          // 這裡假設你的後端提供了一個 /api/works 的 API
-          fetch("/glry")
-            .then((response) => response.json())
-            .then((data) => {
-              this.galleryData = data; // 將後端傳回的資料設置到 works 中
-            })
-            .catch((error) => {
-              console.error("Error fetching galley data:", error);
-            });
-        },
-      },
-    });
-  </script>
 
 </body>
 
