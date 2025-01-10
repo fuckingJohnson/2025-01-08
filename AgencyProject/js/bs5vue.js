@@ -21,7 +21,7 @@ var vueProfolio = createApp({
 }).mount("#portfolio")
 
 $.ajax({
-    url:"http://localhost:5500/profolio",
+    url:"/gallery",
     method: "get",
     dataType: "json",
     success: results=>{
