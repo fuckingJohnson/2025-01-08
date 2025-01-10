@@ -8,12 +8,12 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css"> <!-- 連結外部樣式表 -->
 
-    <!-- 引入 Vue -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.47"></script>
-    
+  <!-- 引入 Vue -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@3.2.47"></script>
 
-    <!-- 引入 jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- 引入 jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -55,14 +55,14 @@
 
 
   <!-- Gallery -->
-   <div id="gallerysc">
-  <section id="gallery" class="container py-5">
-    <h2 class="text-center mb-4">Gallery</h2>
-    <div class="row" >
-      <div class="col-md-4 mb-4" v-for="glry in galleryData">
-        <img :src="'pictures/'+glry.imgSrc" class="img-fluid gallery" alt="Gallery Item 0">
-      </div>
-      <!-- <div class="col-md-4 mb-4">
+  <div id="gallerysc">
+    <section id="gallery" class="container py-5">
+      <h2 class="text-center mb-4">Gallery</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4" v-for="glry in galleryData">
+          <img :src="'pictures/'+glry.imgSrc" class="img-fluid gallery" alt="Gallery Item 0">
+        </div>
+        <!-- <div class="col-md-4 mb-4">
         <img src="image/7-07-2.png" class="img-fluid gallery" alt="Gallery Item 1">
       </div>
       <div class="col-md-4 mb-4">
@@ -71,16 +71,18 @@
       <div class="col-md-4 mb-4">
         <img src="image/7-07-3.png" class="img-fluid gallery" alt="Gallery Item 3">
       </div> -->
-    </div>
-  </section>
-</div>
+      </div>
+    </section>
+  </div>
 
   <!-- Shop Section -->
   <section id="MY SERVE" class="content-section">
     <h2 class="text-center mb-4">MY SERVE</h2>
     <div class="row">
       <div class="col-md-6">
-        <h4><P>Potography</h4>
+        <h4>
+          <P>Potography
+        </h4>
         <p>Explore unique handcrafted patterns designed for you.</p>
       </div>
       <div class="col-md-6">
@@ -100,14 +102,10 @@
   </footer>
 
   <script src="https://www.instagram.com/0523_samli/"></script>
+  <script src="js/bs5vue.js"></script>
 
-</body>
-
-   <!-- Theme JavaScript -->
-   <script src="js/bs5vue.js"></script>
-
-   <script src="./js/vue.min.js"></script>
-<script>
+  <script src="js/vue.min.js"></script>
+  <script>
     new Vue({
       el: "#gallerysc", // 指定 Vue 實例作用的元素
       data: {
@@ -116,7 +114,7 @@
       mounted() {
         // 在實例被創建之後執行，通常用來發送獲取資料的請求
         this.fetchgalleryData();
- 
+
       },
       methods: {
         fetchgalleryData() {
@@ -134,5 +132,10 @@
       },
     });
   </script>
+
+</body>
+
+<!-- Theme JavaScript -->
+
 
 </html>
