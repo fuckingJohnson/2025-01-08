@@ -42,14 +42,8 @@ body {
 }
 
 .footer {
-  background: #000000;
+  background-color: #343a40;
   color: white;
-  height: 10vh;
+  padding: 20px 0;
   text-align: center;
-  display: grid;
-  place-items: center;
-}
-
-.upload_gallery{
-height: 100vh;
 }
