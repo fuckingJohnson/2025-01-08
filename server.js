@@ -38,11 +38,11 @@ server.set("views", __dirname+"/views");
 //     { modal: "#portfolioModal3", imgSrc: "treehouse.png", heading: "Treehouse", text: "Website Design" }
 // ])
 
-// informationDB.insert([
-//     {imgSrc: "./image/7-07.png"},
-//     {imgSrc: "./image/7-07-2.png"},
-//     {imgSrc: "./image/7-07-3.png"}
-// ])
+informationDB.insert([
+    {imgSrc: "7-07.png"},
+    {imgSrc: "7-07-2.png"},
+    {imgSrc: "7-07-3.png"}
+])
 
 
 // server.get("/services", (req, res) => {
